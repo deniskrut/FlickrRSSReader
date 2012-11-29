@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		921105EF15E0E23A00F87576 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921105EE15E0E23A00F87576 /* UIKit.framework */; };
+		921105F115E0E23A00F87576 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921105F015E0E23A00F87576 /* Foundation.framework */; };
+		921105F315E0E23A00F87576 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921105F215E0E23A00F87576 /* CoreGraphics.framework */; };
+		921105F915E0E23A00F87576 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 921105F715E0E23A00F87576 /* InfoPlist.strings */; };
+		921105FB15E0E23A00F87576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 921105FA15E0E23A00F87576 /* main.m */; };
+		921105FF15E0E23A00F87576 /* FRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 921105FE15E0E23A00F87576 /* FRAppDelegate.m */; };
+		9211060215E0E23A00F87576 /* FRMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9211060115E0E23A00F87576 /* FRMasterViewController.m */; };
+		9211060515E0E23A00F87576 /* FRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9211060415E0E23A00F87576 /* FRDetailViewController.m */; };
+		9211060815E0E23B00F87576 /* FRMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9211060615E0E23B00F87576 /* FRMasterViewController_iPhone.xib */; };
+		9211060B15E0E23B00F87576 /* FRMasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9211060915E0E23B00F87576 /* FRMasterViewController_iPad.xib */; };
+		9211060E15E0E23B00F87576 /* FRDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9211060C15E0E23B00F87576 /* FRDetailViewController_iPhone.xib */; };
+		9211061115E0E23B00F87576 /* FRDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9211060F15E0E23B00F87576 /* FRDetailViewController_iPad.xib */; };
+		9211061A15E0E27E00F87576 /* FRRSSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9211061915E0E27E00F87576 /* FRRSSParser.m */; };
+		9211063415E0EB3700F87576 /* FRRSSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9211063315E0EB3700F87576 /* FRRSSItem.m */; };
+		9211063C15E11A2C00F87576 /* FRImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9211063B15E11A2C00F87576 /* FRImageLoader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		921105EA15E0E23A00F87576 /* FlickrRSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrRSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		921105EE15E0E23A00F87576 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		921105F015E0E23A00F87576 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		921105F215E0E23A00F87576 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		921105F615E0E23A00F87576 /* FlickrRSSReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrRSSReader-Info.plist"; sourceTree = "<group>"; };
+		921105F815E0E23A00F87576 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		921105FA15E0E23A00F87576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		921105FC15E0E23A00F87576 /* FlickrRSSReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlickrRSSReader-Prefix.pch"; sourceTree = "<group>"; };
+		921105FD15E0E23A00F87576 /* FRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRAppDelegate.h; sourceTree = "<group>"; };
+		921105FE15E0E23A00F87576 /* FRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRAppDelegate.m; sourceTree = "<group>"; };
+		9211060015E0E23A00F87576 /* FRMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRMasterViewController.h; sourceTree = "<group>"; };
+		9211060115E0E23A00F87576 /* FRMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRMasterViewController.m; sourceTree = "<group>"; };
+		9211060315E0E23A00F87576 /* FRDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRDetailViewController.h; sourceTree = "<group>"; };
+		9211060415E0E23A00F87576 /* FRDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRDetailViewController.m; sourceTree = "<group>"; };
+		9211060715E0E23B00F87576 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FRMasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		9211060A15E0E23B00F87576 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FRMasterViewController_iPad.xib; sourceTree = "<group>"; };
+		9211060D15E0E23B00F87576 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FRDetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		9211061015E0E23B00F87576 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FRDetailViewController_iPad.xib; sourceTree = "<group>"; };
+		9211061815E0E27E00F87576 /* FRRSSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRRSSParser.h; sourceTree = "<group>"; };
+		9211061915E0E27E00F87576 /* FRRSSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRRSSParser.m; sourceTree = "<group>"; };
+		9211061B15E0E2A400F87576 /* FRRSSParserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRRSSParserDelegate.h; sourceTree = "<group>"; };
+		9211063215E0EB3700F87576 /* FRRSSItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRRSSItem.h; sourceTree = "<group>"; };
+		9211063315E0EB3700F87576 /* FRRSSItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRRSSItem.m; sourceTree = "<group>"; };
+		9211063A15E11A2C00F87576 /* FRImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRImageLoader.h; sourceTree = "<group>"; };
+		9211063B15E11A2C00F87576 /* FRImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRImageLoader.m; sourceTree = "<group>"; };
+		9211063D15E11AEE00F87576 /* FRImageLoaderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRImageLoaderDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		921105E715E0E23A00F87576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921105EF15E0E23A00F87576 /* UIKit.framework in Frameworks */,
+				921105F115E0E23A00F87576 /* Foundation.framework in Frameworks */,
+				921105F315E0E23A00F87576 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		921105DF15E0E23A00F87576 = {
+			isa = PBXGroup;
+			children = (
+				921105F415E0E23A00F87576 /* FlickrRSSReader */,
+				921105ED15E0E23A00F87576 /* Frameworks */,
+				921105EB15E0E23A00F87576 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		921105EB15E0E23A00F87576 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				921105EA15E0E23A00F87576 /* FlickrRSSReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		921105ED15E0E23A00F87576 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				921105EE15E0E23A00F87576 /* UIKit.framework */,
+				921105F015E0E23A00F87576 /* Foundation.framework */,
+				921105F215E0E23A00F87576 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		921105F415E0E23A00F87576 /* FlickrRSSReader */ = {
+			isa = PBXGroup;
+			children = (
+				9211063915E119F900F87576 /* ImageLoader */,
+				9211063115E0EAF700F87576 /* RSSItem */,
+				9211061715E0E24900F87576 /* RSSParser */,
+				921105FD15E0E23A00F87576 /* FRAppDelegate.h */,
+				921105FE15E0E23A00F87576 /* FRAppDelegate.m */,
+				9211060015E0E23A00F87576 /* FRMasterViewController.h */,
+				9211060115E0E23A00F87576 /* FRMasterViewController.m */,
+				9211060315E0E23A00F87576 /* FRDetailViewController.h */,
+				9211060415E0E23A00F87576 /* FRDetailViewController.m */,
+				9211060615E0E23B00F87576 /* FRMasterViewController_iPhone.xib */,
+				9211060915E0E23B00F87576 /* FRMasterViewController_iPad.xib */,
+				9211060C15E0E23B00F87576 /* FRDetailViewController_iPhone.xib */,
+				9211060F15E0E23B00F87576 /* FRDetailViewController_iPad.xib */,
+				921105F515E0E23A00F87576 /* Supporting Files */,
+			);
+			path = FlickrRSSReader;
+			sourceTree = "<group>";
+		};
+		921105F515E0E23A00F87576 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				921105F615E0E23A00F87576 /* FlickrRSSReader-Info.plist */,
+				921105F715E0E23A00F87576 /* InfoPlist.strings */,
+				921105FA15E0E23A00F87576 /* main.m */,
+				921105FC15E0E23A00F87576 /* FlickrRSSReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9211061715E0E24900F87576 /* RSSParser */ = {
+			isa = PBXGroup;
+			children = (
+				9211061815E0E27E00F87576 /* FRRSSParser.h */,
+				9211061915E0E27E00F87576 /* FRRSSParser.m */,
+				9211061B15E0E2A400F87576 /* FRRSSParserDelegate.h */,
+			);
+			name = RSSParser;
+			sourceTree = "<group>";
+		};
+		9211063115E0EAF700F87576 /* RSSItem */ = {
+			isa = PBXGroup;
+			children = (
+				9211063215E0EB3700F87576 /* FRRSSItem.h */,
+				9211063315E0EB3700F87576 /* FRRSSItem.m */,
+			);
+			name = RSSItem;
+			sourceTree = "<group>";
+		};
+		9211063915E119F900F87576 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				9211063A15E11A2C00F87576 /* FRImageLoader.h */,
+				9211063B15E11A2C00F87576 /* FRImageLoader.m */,
+				9211063D15E11AEE00F87576 /* FRImageLoaderDelegate.h */,
+			);
+			name = ImageLoader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		921105E915E0E23A00F87576 /* FlickrRSSReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9211061415E0E23B00F87576 /* Build configuration list for PBXNativeTarget "FlickrRSSReader" */;
+			buildPhases = (
+				921105E615E0E23A00F87576 /* Sources */,
+				921105E715E0E23A00F87576 /* Frameworks */,
+				921105E815E0E23A00F87576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlickrRSSReader;
+			productName = FlickrRSSReader;
+			productReference = 921105EA15E0E23A00F87576 /* FlickrRSSReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		921105E115E0E23A00F87576 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FR;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Denis Krut";
+			};
+			buildConfigurationList = 921105E415E0E23A00F87576 /* Build configuration list for PBXProject "FlickrRSSReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 921105DF15E0E23A00F87576;
+			productRefGroup = 921105EB15E0E23A00F87576 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				921105E915E0E23A00F87576 /* FlickrRSSReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		921105E815E0E23A00F87576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921105F915E0E23A00F87576 /* InfoPlist.strings in Resources */,
+				9211060815E0E23B00F87576 /* FRMasterViewController_iPhone.xib in Resources */,
+				9211060B15E0E23B00F87576 /* FRMasterViewController_iPad.xib in Resources */,
+				9211060E15E0E23B00F87576 /* FRDetailViewController_iPhone.xib in Resources */,
+				9211061115E0E23B00F87576 /* FRDetailViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		921105E615E0E23A00F87576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921105FB15E0E23A00F87576 /* main.m in Sources */,
+				921105FF15E0E23A00F87576 /* FRAppDelegate.m in Sources */,
+				9211060215E0E23A00F87576 /* FRMasterViewController.m in Sources */,
+				9211060515E0E23A00F87576 /* FRDetailViewController.m in Sources */,
+				9211061A15E0E27E00F87576 /* FRRSSParser.m in Sources */,
+				9211063415E0EB3700F87576 /* FRRSSItem.m in Sources */,
+				9211063C15E11A2C00F87576 /* FRImageLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		921105F715E0E23A00F87576 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				921105F815E0E23A00F87576 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9211060615E0E23B00F87576 /* FRMasterViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9211060715E0E23B00F87576 /* en */,
+			);
+			name = FRMasterViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		9211060915E0E23B00F87576 /* FRMasterViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9211060A15E0E23B00F87576 /* en */,
+			);
+			name = FRMasterViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		9211060C15E0E23B00F87576 /* FRDetailViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9211060D15E0E23B00F87576 /* en */,
+			);
+			name = FRDetailViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		9211060F15E0E23B00F87576 /* FRDetailViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9211061015E0E23B00F87576 /* en */,
+			);
+			name = FRDetailViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9211061215E0E23B00F87576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9211061315E0E23B00F87576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9211061515E0E23B00F87576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickrRSSReader/FlickrRSSReader-Prefix.pch";
+				INFOPLIST_FILE = "FlickrRSSReader/FlickrRSSReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9211061615E0E23B00F87576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickrRSSReader/FlickrRSSReader-Prefix.pch";
+				INFOPLIST_FILE = "FlickrRSSReader/FlickrRSSReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		921105E415E0E23A00F87576 /* Build configuration list for PBXProject "FlickrRSSReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9211061215E0E23B00F87576 /* Debug */,
+				9211061315E0E23B00F87576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9211061415E0E23B00F87576 /* Build configuration list for PBXNativeTarget "FlickrRSSReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9211061515E0E23B00F87576 /* Debug */,
+				9211061615E0E23B00F87576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 921105E115E0E23A00F87576 /* Project object */;
+}
